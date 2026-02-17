@@ -1,0 +1,46 @@
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+.conda/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+notebook/
+
+# IDE settings
+.vscode/
+.idea/
+.gemini/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+error_log.txt
+output.txt
+analysis_results.txt
+multi_window_analysis_results.txt
+
+# Source scripts (not needed for deployed app)
+src/
+
+# Large audio/music files (too big for GitHub)
+*.wav
+*.mid
+*.mscz
+
+# Backup files
+*_backup.py
+
+# Test files
+test_env.py
