@@ -5,6 +5,7 @@
 # DARK MODE CSS (Default)
 # ============================================
 DARK_MODE_CSS = """
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <style>
     /* Premium Fonts */
     @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
@@ -811,6 +812,547 @@ DARK_MODE_CSS = """
     
     /* Image constraints */
     .stImage > img { max-height: 350px; object-fit: contain; }
+    
+    /* ============================================ */
+    /* MOBILE RESPONSIVE - TABLET (max-width: 992px) */
+    /* ============================================ */
+    @media screen and (max-width: 992px) {
+        .main .block-container {
+            padding: 0rem 1rem 1rem 1rem !important;
+            margin-top: -4rem !important;
+        }
+        
+        .hero-section {
+            padding: 2rem 1.5rem !important;
+            margin-bottom: 1.5rem !important;
+        }
+        
+        .hero-title {
+            font-size: 2rem !important;
+        }
+        
+        .hero-subtitle {
+            font-size: 1rem !important;
+        }
+        
+        .hero-bg-brain {
+            width: 180px !important;
+            height: 180px !important;
+            opacity: 0.4 !important;
+        }
+        
+        .hero-brain-animated {
+            width: 160px !important;
+            height: 160px !important;
+            opacity: 0.5 !important;
+        }
+        
+        .metric-value {
+            font-size: 1.75rem !important;
+        }
+        
+        .page-header {
+            padding: 1.2rem 1.5rem !important;
+        }
+        
+        .page-title {
+            font-size: 1.4rem !important;
+        }
+        
+        .module-card {
+            padding: 1rem !important;
+        }
+        
+        .module-title {
+            font-size: 1rem !important;
+        }
+        
+        /* Reduce orb sizes */
+        .main::before {
+            width: 200px !important;
+            height: 200px !important;
+        }
+        .main::after {
+            width: 150px !important;
+            height: 150px !important;
+        }
+    }
+    
+    /* ============================================ */
+    /* MOBILE RESPONSIVE - SMALL TABLET (max-width: 768px) */
+    /* ============================================ */
+    @media screen and (max-width: 768px) {
+        .main .block-container {
+            padding: 0rem 0.75rem 1rem 0.75rem !important;
+            margin-top: -3rem !important;
+        }
+        
+        .hero-section {
+            padding: 1.5rem 1.25rem !important;
+        }
+        
+        .hero-title {
+            font-size: 1.6rem !important;
+            line-height: 1.2 !important;
+        }
+        
+        .hero-subtitle {
+            font-size: 0.9rem !important;
+            max-width: 100% !important;
+        }
+        
+        .hero-bg-brain, .hero-brain-animated {
+            display: none !important;
+        }
+        
+        .hero-badge {
+            font-size: 0.75rem !important;
+            padding: 6px 12px !important;
+        }
+        
+        .hero-status {
+            font-size: 0.8rem !important;
+            padding: 6px 12px !important;
+        }
+        
+        .metrics-row {
+            grid-template-columns: repeat(2, 1fr) !important;
+            gap: 0.75rem !important;
+        }
+        
+        .metric-card {
+            padding: 1rem !important;
+        }
+        
+        .metric-value {
+            font-size: 1.5rem !important;
+        }
+        
+        .metric-label {
+            font-size: 0.8rem !important;
+        }
+        
+        .metric-icon {
+            width: 40px !important;
+            height: 40px !important;
+            font-size: 1rem !important;
+        }
+        
+        .page-header {
+            padding: 1rem 1.2rem !important;
+            margin-bottom: 1rem !important;
+        }
+        
+        .page-title {
+            font-size: 1.25rem !important;
+        }
+        
+        .page-subtitle {
+            font-size: 0.85rem !important;
+        }
+        
+        .section-title {
+            font-size: 1.1rem !important;
+        }
+        
+        /* Wave bands responsive */
+        .wave-bands-card {
+            padding: 1rem !important;
+        }
+        
+        .wave-item {
+            padding: 0.5rem 0.25rem !important;
+        }
+        
+        .wave-name {
+            font-size: 0.85rem !important;
+        }
+        
+        .wave-range {
+            font-size: 0.65rem !important;
+        }
+        
+        .wave-value {
+            font-size: 1rem !important;
+        }
+        
+        .wave-dot {
+            width: 12px !important;
+            height: 12px !important;
+        }
+        
+        /* Glass cards */
+        .glass-card, .content-card, .prediction-card, .control-panel {
+            padding: 1rem !important;
+            border-radius: 14px !important;
+        }
+        
+        .card-header {
+            margin-bottom: 0.75rem !important;
+        }
+        
+        .card-title {
+            font-size: 0.95rem !important;
+            gap: 8px !important;
+        }
+        
+        /* Module cards */
+        .module-card {
+            padding: 0.8rem !important;
+            border-radius: 12px !important;
+        }
+        
+        .module-title {
+            font-size: 0.9rem !important;
+        }
+        
+        /* Footer */
+        .dashboard-footer {
+            padding: 1rem !important;
+        }
+        
+        .footer-brand {
+            font-size: 1rem !important;
+        }
+        
+        .footer-desc {
+            font-size: 0.8rem !important;
+        }
+        
+        .footer-badges {
+            flex-wrap: wrap !important;
+            gap: 0.4rem !important;
+        }
+        
+        .tech-badge {
+            font-size: 0.7rem !important;
+            padding: 3px 8px !important;
+        }
+        
+        /* Sidebar responsive */
+        .sidebar-brand {
+            padding: 0.75rem !important;
+        }
+        
+        .brand-text h2 {
+            font-size: 1.1rem !important;
+        }
+        
+        /* Tab labels */
+        .stTabs [data-baseweb="tab"] {
+            font-size: 0.85rem !important;
+            padding: 8px 12px !important;
+        }
+        
+        /* Charts */
+        .stImage > img {
+            max-height: 250px !important;
+        }
+        
+        /* Audio cards */
+        .audio-card {
+            padding: 1.2rem !important;
+        }
+        
+        .album-art {
+            width: 100px !important;
+            height: 100px !important;
+            font-size: 2.5rem !important;
+        }
+        
+        .audio-title {
+            font-size: 1.2rem !important;
+        }
+        
+        .audio-desc {
+            font-size: 0.85rem !important;
+        }
+    }
+    
+    /* ============================================ */
+    /* MOBILE RESPONSIVE - PHONE (max-width: 576px) */
+    /* ============================================ */
+    @media screen and (max-width: 576px) {
+        .main .block-container {
+            padding: 0rem 0.5rem 0.75rem 0.5rem !important;
+            margin-top: -2rem !important;
+        }
+        
+        .hero-section {
+            padding: 1.25rem 1rem !important;
+            border-radius: 16px !important;
+            margin: 0 0 1rem 0 !important;
+        }
+        
+        .hero-title {
+            font-size: 1.35rem !important;
+        }
+        
+        .hero-subtitle {
+            font-size: 0.85rem !important;
+            margin-bottom: 1rem !important;
+        }
+        
+        .hero-badge {
+            font-size: 0.7rem !important;
+            padding: 5px 10px !important;
+            margin-bottom: 0.75rem !important;
+        }
+        
+        .metrics-row {
+            grid-template-columns: 1fr !important;
+            gap: 0.6rem !important;
+        }
+        
+        .metric-card {
+            padding: 0.85rem !important;
+        }
+        
+        .metric-header {
+            margin-bottom: 0.6rem !important;
+        }
+        
+        .metric-value {
+            font-size: 1.4rem !important;
+        }
+        
+        .metric-icon {
+            width: 36px !important;
+            height: 36px !important;
+            border-radius: 10px !important;
+            font-size: 0.9rem !important;
+        }
+        
+        .page-header {
+            padding: 0.8rem 1rem !important;
+            border-radius: 14px !important;
+            margin-bottom: 0.75rem !important;
+        }
+        
+        .page-title {
+            font-size: 1.1rem !important;
+        }
+        
+        .page-subtitle {
+            font-size: 0.8rem !important;
+        }
+        
+        .section-title {
+            font-size: 1rem !important;
+        }
+        
+        .section-header {
+            padding: 0.5rem 0.8rem !important;
+            margin: 1rem 0 0.75rem 0 !important;
+        }
+        
+        /* Wave bands stacked on phones */
+        .wave-bands-card {
+            padding: 0.75rem !important;
+            border-radius: 14px !important;
+        }
+        
+        .wave-item {
+            padding: 0.4rem 0.2rem !important;
+        }
+        
+        .wave-name {
+            font-size: 0.75rem !important;
+        }
+        
+        .wave-range {
+            font-size: 0.6rem !important;
+        }
+        
+        .wave-value {
+            font-size: 0.85rem !important;
+        }
+        
+        .wave-dot {
+            width: 10px !important;
+            height: 10px !important;
+            margin-bottom: 6px !important;
+        }
+        
+        /* Cards */
+        .glass-card, .content-card, .prediction-card, .control-panel, .wave-bands-card {
+            border-radius: 12px !important;
+        }
+        
+        .module-card {
+            padding: 0.7rem !important;
+            border-radius: 10px !important;
+        }
+        
+        .module-title {
+            font-size: 0.85rem !important;
+        }
+        
+        /* Buttons */
+        .stButton > button {
+            font-size: 0.8rem !important;
+            padding: 0.4rem 0.75rem !important;
+            border-radius: 10px !important;
+        }
+        
+        /* Footer */
+        .dashboard-footer {
+            padding: 0.75rem !important;
+            border-radius: 12px !important;
+        }
+        
+        .footer-brand {
+            font-size: 0.9rem !important;
+        }
+        
+        .footer-desc {
+            font-size: 0.75rem !important;
+        }
+        
+        .tech-badge {
+            font-size: 0.65rem !important;
+            padding: 2px 6px !important;
+        }
+        
+        /* Inputs */
+        .stSelectbox > div > div, .stNumberInput > div > div > input {
+            font-size: 0.85rem !important;
+        }
+        
+        /* Audio cards on mobile */
+        .audio-card {
+            padding: 1rem !important;
+            border-radius: 14px !important;
+        }
+        
+        .album-art {
+            width: 80px !important;
+            height: 80px !important;
+            font-size: 2rem !important;
+            margin: 0 auto 1rem !important;
+        }
+        
+        .audio-title {
+            font-size: 1.1rem !important;
+        }
+        
+        .audio-desc {
+            font-size: 0.8rem !important;
+            margin-bottom: 1rem !important;
+        }
+        
+        .info-tag {
+            font-size: 0.7rem !important;
+            padding: 0.2rem 0.5rem !important;
+        }
+        
+        .music-info {
+            gap: 0.4rem !important;
+        }
+        
+        /* MFCC grid responsive */
+        .mfcc-grid {
+            grid-template-columns: repeat(2, 1fr) !important;
+            gap: 0.4rem !important;
+        }
+        
+        .mfcc-card {
+            padding: 0.4rem !important;
+        }
+        
+        .mfcc-num {
+            font-size: 0.65rem !important;
+        }
+        
+        .mfcc-vals {
+            font-size: 0.6rem !important;
+        }
+        
+        .summary-grid {
+            grid-template-columns: 1fr !important;
+        }
+        
+        /* Tab styling */
+        .stTabs [data-baseweb="tab-list"] {
+            padding: 0.3rem !important;
+        }
+        
+        .stTabs [data-baseweb="tab"] {
+            font-size: 0.75rem !important;
+            padding: 6px 10px !important;
+        }
+        
+        /* Charts & images smaller */
+        .stImage > img {
+            max-height: 200px !important;
+        }
+        
+        /* Reduce background effects for performance */
+        .stApp::before {
+            opacity: 0.4 !important;
+        }
+        
+        .stApp::after {
+            display: none !important;
+        }
+        
+        .main::before, .main::after {
+            display: none !important;
+        }
+        
+        .block-container::before {
+            display: none !important;
+        }
+        
+        /* Sidebar collapse control */
+        [data-testid="stSidebarCollapsedControl"] {
+            top: 0.5rem !important;
+        }
+        
+        /* Streamlit columns gap */
+        [data-testid="stHorizontalBlock"] {
+            gap: 0.5rem !important;
+        }
+        
+        /* Number input & slider responsive */
+        .stSlider [data-baseweb="slider"] {
+            padding: 0 !important;
+        }
+    }
+    
+    /* ============================================ */
+    /* VERY SMALL PHONE (max-width: 400px) */
+    /* ============================================ */
+    @media screen and (max-width: 400px) {
+        .main .block-container {
+            padding: 0rem 0.35rem 0.5rem 0.35rem !important;
+        }
+        
+        .hero-title {
+            font-size: 1.15rem !important;
+        }
+        
+        .hero-subtitle {
+            font-size: 0.8rem !important;
+        }
+        
+        .metric-value {
+            font-size: 1.2rem !important;
+        }
+        
+        .page-title {
+            font-size: 1rem !important;
+        }
+        
+        .wave-name {
+            font-size: 0.65rem !important;
+        }
+        
+        .wave-value {
+            font-size: 0.75rem !important;
+        }
+    }
+
 </style>
 """
 
