@@ -905,6 +905,12 @@ DARK_MODE_CSS = """
             width: 120px !important;
             height: 120px !important;
             right: 2% !important;
+            z-index: 0 !important;
+        }
+        
+        .hero-content {
+            position: relative !important;
+            z-index: 5 !important;
         }
         
         .hero-badge {
