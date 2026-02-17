@@ -15,29 +15,10 @@ DARK_MODE_CSS = """
     /* Hide Streamlit defaults */
     #MainMenu, footer { visibility: hidden; }
     
-    /* Hide Manage app bar / deploy toolbar / status widget */
-    [data-testid="manage-app-button"] { display: none !important; }
-    .reportview-container .main footer { display: none !important; }
-    ._profileContainer_gzau3_53 { display: none !important; }
-    ._container_gzau3_1 { display: none !important; }
-    [data-testid="stStatusWidget"] { display: none !important; }
+    /* Hide deploy toolbar */
     .stDeployButton { display: none !important; }
     [data-testid="stToolbar"] { display: none !important; }
     .stAppToolbar { display: none !important; }
-    .stAppViewBlockContainer [data-testid="stBottomBlockContainer"] { display: none !important; }
-    
-    /* Hide the Manage App overlay at bottom-right corner */
-    div[class*="stAppViewerOverlay"] { display: none !important; }
-    .viewerBadge_container__r5tak { display: none !important; }
-    .viewerBadge_link__qRIco { display: none !important; }
-    div[class*="viewerBadge"] { display: none !important; }
-    div[class*="StatusWidget"] { display: none !important; }
-    button[kind="manage"] { display: none !important; }
-    
-    /* Nuclear option: hide any fixed element at bottom-right that contains 'Manage' */
-    .stApp > div:last-child > div:last-child { 
-        display: none !important; 
-    }
     
     /* Hide top header bar (black line) */
     header[data-testid="stHeader"] {
