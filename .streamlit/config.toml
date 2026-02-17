@@ -2,4 +2,4 @@
 base = "dark"
 
 [client]
-toolbarMode = "minimal"
+toolbarMode = "viewer"
