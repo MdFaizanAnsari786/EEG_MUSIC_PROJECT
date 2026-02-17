@@ -903,7 +903,10 @@ DARK_MODE_CSS = """
         }
         
         .hero-bg-brain, .hero-brain-animated {
-            display: none !important;
+            width: 120px !important;
+            height: 120px !important;
+            opacity: 0.4 !important;
+            right: 2% !important;
         }
         
         .hero-badge {
