@@ -202,7 +202,7 @@ with col1:
     # Static image from notebook
     distraction_focus_img = PROJECT_DIR / "outputs" / "distraction_vs_focus.png"
     if distraction_focus_img.exists():
-        st.image(str(distraction_focus_img), use_container_width=True)
+        st.image(str(distraction_focus_img))
     
     st.caption("⚠️ KEY INSIGHT: Higher distraction levels strongly reduce focus")
     
@@ -229,7 +229,7 @@ with col2:
     # Static image from notebook
     phone_focus_img = PROJECT_DIR / "outputs" / "phone_usage_vs_focus.png"
     if phone_focus_img.exists():
-        st.image(str(phone_focus_img), use_container_width=True)
+        st.image(str(phone_focus_img))
     
     st.caption("📊 Shows trend between daily phone usage and reported focus levels")
     
@@ -255,7 +255,7 @@ st.markdown("#### 3️⃣ Multi-Variable Relationships by Cognitive State (Pair 
 # Static image from notebook
 pairplot_img = PROJECT_DIR / "outputs" / "pairplot_multi_variable.png"
 if pairplot_img.exists():
-    st.image(str(pairplot_img), use_container_width=True)
+    st.image(str(pairplot_img))
 
 st.caption("🔍 Comprehensive view of relationships between behavioral and psychological variables")
 
@@ -509,8 +509,8 @@ with col1:
 with col2:
     st.markdown("**📥 Download Options**")
     csv_raw = df_raw.to_csv(index=False).encode('utf-8')
-    st.download_button("Download Raw CSV", csv_raw, "survey_raw.csv", "text/csv", use_container_width=True)
+    st.download_button("Download Raw CSV", csv_raw, "survey_raw.csv", "text/csv")
     
     csv_clean = df.to_csv(index=False).encode('utf-8')
-    st.download_button("Download Cleaned CSV", csv_clean, "survey_cleaned.csv", "text/csv", use_container_width=True)
+    st.download_button("Download Cleaned CSV", csv_clean, "survey_cleaned.csv", "text/csv")
 

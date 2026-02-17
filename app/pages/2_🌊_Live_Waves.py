@@ -135,7 +135,7 @@ with col1:
     live_mode = st.toggle("🔴 Live Animation", value=False)
 
 with col2:
-    if st.button("🔄 Reset Waves", use_container_width=True):
+    if st.button("🔄 Reset Waves"):
         study_row = df[df["label"] == 1].iloc[0]
         phone_row = df[df["label"] == 0].iloc[0]
         t = st.session_state.t_live

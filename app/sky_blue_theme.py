@@ -15,6 +15,15 @@ DARK_MODE_CSS = """
     /* Hide Streamlit defaults */
     #MainMenu, footer { visibility: hidden; }
     
+    /* Hide Manage app bar at bottom */
+    [data-testid="manage-app-button"] { display: none !important; }
+    .reportview-container .main footer { display: none !important; }
+    ._profileContainer_gzau3_53 { display: none !important; }
+    ._container_gzau3_1 { display: none !important; }
+    [data-testid="stStatusWidget"] { display: none !important; }
+    .stDeployButton { display: none !important; }
+    [data-testid="stToolbar"] { display: none !important; }
+    
     /* Hide top header bar (black line) */
     header[data-testid="stHeader"] {
         background: transparent !important;

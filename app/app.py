@@ -351,34 +351,34 @@ col1, col2, col3 = st.columns(3)
 
 with col1:
     st.markdown('<div class="module-card"><div class="module-title">🎯 EEG Prediction</div></div>', unsafe_allow_html=True)
-    if st.button("Open Prediction →", key="nav_eeg", use_container_width=True):
+    if st.button("Open Prediction →", key="nav_eeg"):
         st.switch_page("pages/1_🎯_EEG_Prediction.py")
 
 with col2:
     st.markdown('<div class="module-card"><div class="module-title">🌊 Live Brainwaves</div></div>', unsafe_allow_html=True)
-    if st.button("Open Waves →", key="nav_waves", use_container_width=True):
+    if st.button("Open Waves →", key="nav_waves"):
         st.switch_page("pages/2_🌊_Live_Waves.py")
 
 with col3:
     st.markdown('<div class="module-card"><div class="module-title">🎵 Brain Music</div></div>', unsafe_allow_html=True)
-    if st.button("Open Music →", key="nav_music", use_container_width=True):
+    if st.button("Open Music →", key="nav_music"):
         st.switch_page("pages/3_🎵_Brain_Music.py")
 
 col4, col5, col6 = st.columns(3)
 
 with col4:
     st.markdown('<div class="module-card"><div class="module-title">📊 Survey Analysis</div></div>', unsafe_allow_html=True)
-    if st.button("Open Survey →", key="nav_survey", use_container_width=True):
+    if st.button("Open Survey →", key="nav_survey"):
         st.switch_page("pages/4_📊_Survey_Analysis.py")
 
 with col5:
     st.markdown('<div class="module-card"><div class="module-title">🤖 Model Insights</div></div>', unsafe_allow_html=True)
-    if st.button("Open Insights →", key="nav_model", use_container_width=True):
+    if st.button("Open Insights →", key="nav_model"):
         st.switch_page("pages/5_🤖_Model_Insights.py")
 
 with col6:
     st.markdown('<div class="module-card"><div class="module-title">🚀 About Project</div></div>', unsafe_allow_html=True)
-    if st.button("Open About →", key="nav_about", use_container_width=True):
+    if st.button("Open About →", key="nav_about"):
         pass
 
 # ================= FOOTER =================

@@ -184,7 +184,7 @@ tab1, tab2 = st.tabs(["📚 Study MFCC", "📱 Phone MFCC"])
 
 with tab1:
     if os.path.exists(study_mfcc):
-        st.image(study_mfcc, caption="MFCC Analysis - Study/Focused Brain Music", use_container_width=True)
+        st.image(study_mfcc, caption="MFCC Analysis - Study/Focused Brain Music")
         st.markdown("""
         **Observations:**
         - More uniform and structured patterns
@@ -196,7 +196,7 @@ with tab1:
 
 with tab2:
     if os.path.exists(phone_mfcc):
-        st.image(phone_mfcc, caption="MFCC Analysis - Phone/Distracted Brain Music", use_container_width=True)
+        st.image(phone_mfcc, caption="MFCC Analysis - Phone/Distracted Brain Music")
         st.markdown("""
         **Observations:**
         - More scattered and irregular patterns

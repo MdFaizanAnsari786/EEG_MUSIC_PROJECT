@@ -171,7 +171,7 @@ if existing_curves:
     tabs = st.tabs([name for name, _ in existing_curves])
     for tab, (name, filename) in zip(tabs, existing_curves):
         with tab:
-            st.image(os.path.join(OUTPUTS_DIR, filename), caption=f"Learning Curve - {name}", use_container_width=True)
+            st.image(os.path.join(OUTPUTS_DIR, filename), caption=f"Learning Curve - {name}")
 else:
     st.info("Learning curves not found. Run `python src/generate_learning_curves.py` to generate them.")
 
@@ -216,7 +216,7 @@ if loss_tabs:
     tabs = st.tabs(loss_tabs)
     for tab, (filename, caption) in zip(tabs, loss_files):
         with tab:
-            st.image(os.path.join(OUTPUTS_DIR, filename), caption=caption, use_container_width=True)
+            st.image(os.path.join(OUTPUTS_DIR, filename), caption=caption)
 else:
     st.info("Loss curves not found. Run `python src/generate_cnn1d_curves.py` to generate them.")
 
@@ -240,13 +240,13 @@ with col1:
     cm_path = os.path.join(OUTPUTS_DIR, "confusion_matrix.png")
     if os.path.exists(cm_path):
         st.markdown("### Confusion Matrix")
-        st.image(cm_path, use_container_width=True)
+        st.image(cm_path)
 
 with col2:
     roc_path = os.path.join(OUTPUTS_DIR, "roc_curve.png")
     if os.path.exists(roc_path):
         st.markdown("### ROC Curve")
-        st.image(roc_path, use_container_width=True)
+        st.image(roc_path)
 
 # ================= INDIVIDUAL ROC CURVES =================
 st.markdown('<div class="section-title">🏆 ROC Curves by Model</div>', unsafe_allow_html=True)
@@ -257,7 +257,7 @@ if roc_files:
     tabs = st.tabs([f.replace('roc_','').replace('.png','').replace('_',' ') for f in roc_files])
     for tab, f in zip(tabs, roc_files):
         with tab:
-            st.image(os.path.join(OUTPUTS_DIR, f), use_container_width=True)
+            st.image(os.path.join(OUTPUTS_DIR, f))
 
 # ================= MODEL INFO =================
 st.markdown('<div class="section-title">ℹ️ Model Information</div>', unsafe_allow_html=True)

@@ -342,7 +342,7 @@ with tab4:
         box_path = os.path.join(OUTPUTS_DIR, f"box_{band}.png")
         if os.path.exists(box_path):
             with box_cols[i]:
-                st.image(box_path, caption=band.upper(), use_container_width=True)
+                st.image(box_path, caption=band.upper())
     
     st.markdown("---")
     
@@ -353,7 +353,7 @@ with tab4:
         hist_path = os.path.join(OUTPUTS_DIR, f"hist_{band}.png")
         if os.path.exists(hist_path):
             with hist_cols[i]:
-                st.image(hist_path, caption=band.upper(), use_container_width=True)
+                st.image(hist_path, caption=band.upper())
     
     st.markdown("---")
     
@@ -365,7 +365,7 @@ with tab4:
         path = os.path.join(OUTPUTS_DIR, f"hist_{feat}_derived.png")
         if os.path.exists(path):
             with derived_cols[i % 3]:
-                st.image(path, caption=feat.replace("_", " ").title(), use_container_width=True)
+                st.image(path, caption=feat.replace("_", " ").title())
     
     st.markdown("---")
     
@@ -375,12 +375,12 @@ with tab4:
         corr_path = os.path.join(OUTPUTS_DIR, "correlation_matrix.png")
         if os.path.exists(corr_path):
             st.markdown("### 🔗 Correlation Matrix")
-            st.image(corr_path, use_container_width=True)
+            st.image(corr_path)
     with col2:
         label_path = os.path.join(OUTPUTS_DIR, "label_distribution.png")
         if os.path.exists(label_path):
             st.markdown("### 📈 Label Distribution")
-            st.image(label_path, use_container_width=True)
+            st.image(label_path)
 
 with tab5:
     st.markdown('<div class="section-title">📋 EEG Dataset Access</div>', unsafe_allow_html=True)
@@ -393,22 +393,22 @@ with tab5:
     
     # Download button
     csv = df.to_csv(index=False).encode('utf-8')
-    st.download_button("📥 Download Full CSV", csv, "eeg_data.csv", "text/csv", use_container_width=True)
+    st.download_button("📥 Download Full CSV", csv, "eeg_data.csv", "text/csv")
     
     # Stats
     st.markdown("### 📊 Dataset Statistics")
-    st.dataframe(df.describe(), use_container_width=True)
+    st.dataframe(df.describe())
 
 with tab6:
     c1, c2 = st.columns(2)
     with c1:
         st.markdown("**Absolute Band Powers**")
-        st.dataframe(pd.DataFrame({f: [f"{row[f]:.4f}"] for f in ["delta","theta","alpha","beta","gamma"]}).T.rename(columns={0:"Value"}), use_container_width=True)
+        st.dataframe(pd.DataFrame({f: [f"{row[f]:.4f}"] for f in ["delta","theta","alpha","beta","gamma"]}).T.rename(columns={0:"Value"}))
         st.markdown("**Band Ratios**")
-        st.dataframe(pd.DataFrame({f: [f"{row[f]:.4f}"] for f in ["alpha_beta_ratio","theta_beta_ratio"]}).T.rename(columns={0:"Value"}), use_container_width=True)
+        st.dataframe(pd.DataFrame({f: [f"{row[f]:.4f}"] for f in ["alpha_beta_ratio","theta_beta_ratio"]}).T.rename(columns={0:"Value"}))
     with c2:
         st.markdown("**Relative Band Powers**")
-        st.dataframe(pd.DataFrame({f: [f"{row[f]:.4f}"] for f in ["delta_rel","theta_rel","alpha_rel","beta_rel","gamma_rel"]}).T.rename(columns={0:"Value"}), use_container_width=True)
+        st.dataframe(pd.DataFrame({f: [f"{row[f]:.4f}"] for f in ["delta_rel","theta_rel","alpha_rel","beta_rel","gamma_rel"]}).T.rename(columns={0:"Value"}))
         st.markdown("**Derived Metrics**")
-        st.dataframe(pd.DataFrame({f: [f"{row[f]:.4f}"] for f in ["engagement_index","fatigue","workload","calmness"]}).T.rename(columns={0:"Value"}), use_container_width=True)
+        st.dataframe(pd.DataFrame({f: [f"{row[f]:.4f}"] for f in ["engagement_index","fatigue","workload","calmness"]}).T.rename(columns={0:"Value"}))
 
