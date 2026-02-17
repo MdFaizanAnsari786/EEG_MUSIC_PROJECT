@@ -20,13 +20,11 @@ DARK_MODE_CSS = """
     [data-testid="stToolbar"] { display: none !important; }
     .stAppToolbar { display: none !important; }
     
-    /* Hide top header bar (black line) */
+    /* Hide top header bar (keep transparent but allow sidebar toggle) */
     header[data-testid="stHeader"] {
         background: transparent !important;
-        height: 0 !important;
-        min-height: 0 !important;
-        padding: 0 !important;
-        z-index: 0 !important;
+        border: none !important;
+        box-shadow: none !important;
     }
 
     /* Fix Sidebar Toggle Button Visibility */
@@ -1377,9 +1375,8 @@ LIGHT_MODE_CSS = """
     /* Hide top header bar */
     header[data-testid="stHeader"] {
         background: transparent !important;
-        height: 0 !important;
-        min-height: 0 !important;
-        padding: 0 !important;
+        border: none !important;
+        box-shadow: none !important;
     }
     
     /* Main Background - Cream + Blue Futuristic */
