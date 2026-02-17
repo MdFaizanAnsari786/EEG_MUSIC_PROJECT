@@ -15,10 +15,8 @@ DARK_MODE_CSS = """
     /* Hide Streamlit defaults */
     #MainMenu, footer { visibility: hidden; }
     
-    /* Hide deploy toolbar */
+    /* Hide deploy button only */
     .stDeployButton { display: none !important; }
-    [data-testid="stToolbar"] { display: none !important; }
-    .stAppToolbar { display: none !important; }
     
     /* Hide top header bar (keep transparent but allow sidebar toggle) */
     header[data-testid="stHeader"] {
