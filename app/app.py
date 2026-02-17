@@ -16,6 +16,19 @@ from sky_blue_theme import DARK_MODE_CSS, WAVE_ANIMATION_CODE
 # Apply the dark theme CSS
 st.markdown(DARK_MODE_CSS, unsafe_allow_html=True)
 
+# ================= OG META TAGS FOR LINK PREVIEW =================
+st.markdown("""
+<meta property="og:title" content="🧠 BrainWave | EEG Health Monitor" />
+<meta property="og:description" content="Advanced EEG Analytics • Cognitive State Detection • Study vs Phone Detection • MSc Research Project" />
+<meta property="og:image" content="https://raw.githubusercontent.com/MdFaizanAnsari786/EEG_MUSIC_PROJECT/main/app/brain_futuristic.jpg" />
+<meta property="og:url" content="https://eegmusicproject-bmoj2hs8keezeqfgvv4aey.streamlit.app/" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="🧠 BrainWave | EEG Health Monitor" />
+<meta name="twitter:description" content="Advanced EEG Analytics • Cognitive State Detection • Study vs Phone Detection" />
+<meta name="twitter:image" content="https://raw.githubusercontent.com/MdFaizanAnsari786/EEG_MUSIC_PROJECT/main/app/brain_futuristic.jpg" />
+""", unsafe_allow_html=True)
+
 # ================= PATHS =================
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_DIR = os.path.dirname(BASE_DIR)
