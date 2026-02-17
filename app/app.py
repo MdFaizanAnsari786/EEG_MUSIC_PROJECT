@@ -394,6 +394,24 @@ with col6:
     if st.button("Open About →", key="nav_about"):
         pass
 
+# ================= SIDEBAR SHARE =================
+with st.sidebar:
+    st.markdown("---")
+    st.markdown("""
+    <div style="text-align: center;">
+        <h3>📱 Share App</h3>
+    </div>
+    """, unsafe_allow_html=True)
+    
+    # QR Code for the app
+    qr_url = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://eegmusicproject-bmoj2hs8keezeqfgvv4aey.streamlit.app/"
+    st.image(qr_url, caption="Scan to Open on Mobile", width=150)
+    st.markdown("""
+    <div style="text-align: center; margin-top: 10px;">
+        <small>Scan this QR code to open the app on your phone!</small>
+    </div>
+    """, unsafe_allow_html=True)
+
 # ================= FOOTER =================
 st.markdown("""
 <div class="dashboard-footer">

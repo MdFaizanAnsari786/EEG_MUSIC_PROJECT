@@ -44,3 +44,7 @@ src/
 
 # Test files
 test_env.py
+
+# Allow specific audio files for deployment
+!outputs/study_song_long.wav
+!outputs/phone_song_long.wav

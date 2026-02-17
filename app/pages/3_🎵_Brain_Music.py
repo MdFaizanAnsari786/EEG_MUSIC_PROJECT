@@ -103,8 +103,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PROJECT_DIR = os.path.dirname(BASE_DIR)
 OUTPUTS_DIR = os.path.join(PROJECT_DIR, "outputs")
 
-study_wav = os.path.join(OUTPUTS_DIR, "study_song_full.wav")
-phone_wav = os.path.join(OUTPUTS_DIR, "phone_song_full.wav")
+study_wav = os.path.join(OUTPUTS_DIR, "study_song_long.wav")
+phone_wav = os.path.join(OUTPUTS_DIR, "phone_song_long.wav")
 study_mfcc = os.path.join(OUTPUTS_DIR, "study_mfcc.png")
 phone_mfcc = os.path.join(OUTPUTS_DIR, "phone_mfcc.png")
 
