@@ -845,7 +845,6 @@ DARK_MODE_CSS = """
         .hero-brain-animated {
             width: 160px !important;
             height: 160px !important;
-            opacity: 0.5 !important;
         }
         
         .metric-value {
@@ -905,7 +904,6 @@ DARK_MODE_CSS = """
         .hero-bg-brain, .hero-brain-animated {
             width: 120px !important;
             height: 120px !important;
-            opacity: 0.4 !important;
             right: 2% !important;
         }
         
